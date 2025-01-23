@@ -11,7 +11,7 @@ const HomePage = () => {
 
   useEffect(() => {
     // Fetch data from the mock API or list.json file-----------------
-    fetch("http://localhost:3000/ChartedAccoutant")
+    fetch("https://chartedacc.onrender.com/ChartedAccoutant")
       .then((response) => response.json())
       .then((data) => setAccountants(data))
       .catch((error) => console.error("Error fetching data:", error));
